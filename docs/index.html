@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brian Cummings | Applied AI, Customer Success & Operations Systems Portfolio</title>
+  <meta name="description" content="Executive Operations & Applied AI Portfolio of Brian Cummings — solving operational bottlenecks, cutting manual labor, and accelerating client onboarding." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            slate: {
+              850: '#152033',
+              950: '#0a0f1d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- TOP CONFIDENTIALITY & COMPLIANCE BANNER -->
+  <div class="bg-slate-900 text-slate-200 border-b border-slate-800 text-xs sm:text-sm py-3 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+      <p class="leading-relaxed">
+        <span class="font-semibold text-amber-400">🔒 Portfolio &amp; Confidentiality Notice:</span>
+        This repository contains plain-English case studies, system architecture diagrams, and sanitized demonstration logic. To maintain strict compliance with California grant reporting standards and HIPAA privacy rules, all production source code, credentials, and participant records are housed in private environments. Live screen-share walkthroughs are available upon request.
+      </p>
+    </div>
+  </div>
+
+  <!-- STICKY NAVIGATION -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-lg bg-blue-600 text-white font-bold flex items-center justify-center text-lg shadow-sm">
+          BC
+        </div>
+        <div>
+          <h1 class="font-bold text-slate-900 text-base sm:text-lg leading-tight">Brian Cummings</h1>
+          <p class="text-xs text-slate-500 font-medium">Customer Success, Client Operations &amp; Applied AI Leader</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#impact-metrics" class="hover:text-blue-600 transition-colors">Impact Metrics</a>
+        <a href="#interactive-demo" class="hover:text-blue-600 transition-colors">Interactive AI Demo</a>
+        <a href="#systems-built" class="hover:text-blue-600 transition-colors">Systems Built</a>
+        <a href="#architecture" class="hover:text-blue-600 transition-colors">How It Works</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://linkedin.com/in/briancummings111" target="_blank" rel="noopener noreferrer"
+           class="px-3.5 py-2 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-xs sm:text-sm font-semibold transition-colors">
+          LinkedIn
+        </a>
+        <a href="mailto:briancummings111@gmail.com?subject=Operations%20%26%20Applied%20AI%20Portfolio%20Inquiry"
+           class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition-colors">
+          Contact Brian
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- EXECUTIVE HERO SECTION -->
+  <section class="bg-white border-b border-slate-200 py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-5">
+        <span>📍 Redding, CA (Remote Ready)</span>
+        <span>•</span>
+        <span>B2B SaaS / E-Commerce / EdTech / HealthTech</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl">
+        I build practical AI and workflow systems that eliminate operational busywork.
+      </h2>
+
+      <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
+        I bridge the gap between physical/client operations and software automation. Having spent <strong>15+ years in e-commerce operations</strong> (Amazon Seller Central, Teikametrics, 3PL logistics—cutting client onboarding work by 50% and converting 35%+ of leads), <strong>6 years directing adult education</strong> (300+ videos, +25% course completion), and <strong>20 years in clinical rehabilitation</strong>, I build practical AI and database tools that eliminate repetitive staff busywork and help users succeed in their first 30 days.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-3.5">
+        <a href="#interactive-demo"
+           class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-sm transition-all">
+          <span>⚡ Try Interactive "Before vs. After" AI Demo</span>
+        </a>
+        <a href="#systems-built"
+           class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm transition-all">
+          <span>📂 Explore the 3 Operational Case Studies</span>
+        </a>
+        <a href="https://github.com/briancummings111/applied-ai-operations-portfolio" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold text-sm transition-all">
+          <span>View GitHub Repo &amp; Sanitized Code</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY CAREER METRICS CARDS (6-SECOND RECRUITER SCAN) -->
+  <section id="impact-metrics" class="py-12 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">At-A-Glance Proof</span>
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Measurable Operational Outcomes</h3>
+      </div>
+      <span class="hidden sm:inline-block text-xs text-slate-500 font-medium">30-Second Executive Summary</span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Metric 1 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-300 transition-all">
+        <div class="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 text-xs font-bold mb-3">
+          E-Commerce &amp; SaaS Onboarding
+        </div>
+        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">-50%</div>
+        <div class="mt-1 font-bold text-slate-800 text-sm">Client Onboarding Time</div>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          Standardized SOPs across Amazon Seller Central, Teikametrics, and 3PL workflows while converting 35%+ of qualified leads.
+        </p>
+      </div>
+
+      <!-- Metric 2 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-300 transition-all">
+        <div class="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold mb-3">
+          Applied AI Automation
+        </div>
+        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">-80%</div>
+        <div class="mt-1 font-bold text-slate-800 text-sm">Manual Search Labor</div>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          Replaced 8+ weekly hours of manual job-board hunting with an automated Python + Gemini AI scoring pipeline.
+        </p>
+      </div>
+
+      <!-- Metric 3 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-300 transition-all">
+        <div class="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 text-xs font-bold mb-3">
+          EdTech &amp; Enablement
+        </div>
+        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">+25%</div>
+        <div class="mt-1 font-bold text-slate-800 text-sm">Learner Completion Rate</div>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          Directed adult education programs, producing 300+ instructional videos and leading 80+ live career readiness workshops.
+        </p>
+      </div>
+
+      <!-- Metric 4 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-300 transition-all">
+        <div class="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 text-xs font-bold mb-3">
+          HealthTech &amp; Compliance
+        </div>
+        <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">85+</div>
+        <div class="mt-1 font-bold text-slate-800 text-sm">Partner Network Connected</div>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          Eliminated double data entry across 85+ regional partners (35+ active) using a HIPAA-aligned React &amp; Firebase case portal.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE "BEFORE VS. AFTER AI STRUCTURING" VISUAL TOGGLE -->
+  <section id="interactive-demo" class="py-12 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-bold uppercase tracking-wider mb-3">
+            Interactive Demonstration
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+            Before vs. After: How AI Turns Messy Text Into Staff Decisions
+          </h3>
+          <p class="mt-2 text-slate-300 text-sm sm:text-base max-w-2xl">
+            Click between views below to see how our Gemini API pipeline reads dense job postings, extracts verified wages, flags hidden barriers, and prevents AI hallucinations.
+          </p>
+        </div>
+
+        <!-- View Mode Toggle Buttons -->
+        <div class="inline-flex rounded-xl bg-slate-800 p-1.5 border border-slate-700 self-start">
+          <button id="btn-side-by-side" onclick="setDemoView('both')"
+                  class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-blue-600 text-white shadow">
+            Side-by-Side View
+          </button>
+          <button id="btn-before" onclick="setDemoView('before')"
+                  class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-300 hover:text-white">
+            1. Messy Input (Before)
+          </button>
+          <button id="btn-after" onclick="setDemoView('after')"
+                  class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-300 hover:text-white">
+            2. Scored Card (After)
+          </button>
+        </div>
+      </div>
+
+      <!-- Sample Listing Selector Pills -->
+      <div class="flex flex-wrap items-center gap-2 mb-6">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-2">Select Sample Listing:</span>
+        <button id="sample-0" onclick="selectSample(0)"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all bg-white text-slate-900 border-white">
+          Example A: Warehouse Associate (94/100 Match)
+        </button>
+        <button id="sample-1" onclick="selectSample(1)"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all bg-slate-800 text-slate-300 border-slate-700 hover:border-slate-500">
+          Example B: Clinic Front Desk (88/100 Match)
+        </button>
+        <button id="sample-2" onclick="selectSample(2)"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all bg-slate-800 text-slate-300 border-slate-700 hover:border-slate-500">
+          Example C: Hidden Barrier Alert (48/100 Flagged)
+        </button>
+      </div>
+
+      <!-- Comparison Grid -->
+      <div id="demo-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+
+        <!-- BEFORE PANEL: RAW UNSTRUCTURED POST -->
+        <div id="panel-before" class="bg-slate-800/90 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-700 pb-3 mb-4">
+              <div class="flex items-center gap-2">
+                <span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-rose-300">BEFORE: Raw Unstructured Web Scrape</span>
+              </div>
+              <span class="text-xs text-slate-400 font-mono">~4 mins manual reading</span>
+            </div>
+
+            <p class="text-xs text-slate-400 mb-3">
+              Staff previously had to open dozens of browser tabs and read walls of text like this to spot buried shift rules, pay rates, or lifting requirements:
+            </p>
+
+            <div id="raw-post-box" class="bg-slate-950 rounded-xl p-4 border border-slate-800 font-mono text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs text-slate-400">
+            <span>❌ Buried requirements &amp; inconsistent formatting</span>
+            <span>❌ High copy-paste error rate</span>
+          </div>
+        </div>
+
+        <!-- AFTER PANEL: STRUCTURED AI SCORECARD -->
+        <div id="panel-after" class="bg-white text-slate-900 rounded-2xl border-2 border-blue-500 p-6 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+              <div class="flex items-center gap-2">
+                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">AFTER: Gemini Structured JSON Card</span>
+              </div>
+              <span class="text-xs text-slate-500 font-mono">1.4 sec automated evaluation</span>
+            </div>
+
+            <!-- Card Header -->
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 id="card-title" class="text-lg sm:text-xl font-extrabold text-slate-900">Inventory &amp; Receiving Associate</h4>
+                <p id="card-employer" class="text-sm font-medium text-slate-600">North Valley Supply Co. (Synthetic) • Redding, CA</p>
+              </div>
+              <div id="card-score-badge" class="px-3.5 py-2 rounded-xl bg-emerald-100 text-emerald-800 font-extrabold text-center shrink-0">
+                <div id="card-score" class="text-xl leading-none">94/100</div>
+                <div class="text-[10px] uppercase tracking-wider mt-0.5">Match Score</div>
+              </div>
+            </div>
+
+            <!-- Key Extracted Attributes -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-5">
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <div class="text-[11px] font-semibold uppercase text-slate-400">Verified Wage</div>
+                <div id="card-wage" class="text-sm font-bold text-slate-900 mt-0.5">$21.50 – $24.00/hr</div>
+              </div>
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <div class="text-[11px] font-semibold uppercase text-slate-400">Shift Schedule</div>
+                <div id="card-shift" class="text-sm font-bold text-slate-900 mt-0.5">Mon–Fri Day Shift</div>
+              </div>
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 col-span-2 sm:col-span-1">
+                <div class="text-[11px] font-semibold uppercase text-slate-400">Public Transit</div>
+                <div id="card-transit" class="text-sm font-bold text-emerald-700 mt-0.5">✅ On Bus Route</div>
+              </div>
+            </div>
+
+            <!-- Barrier Flags -->
+            <div class="mt-4">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Extracted Requirements &amp; Barrier Flags</div>
+              <div id="card-flags" class="flex flex-wrap gap-2">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+            <!-- Plain-English Staff Summary -->
+            <div class="mt-4 bg-blue-50/70 border border-blue-200 rounded-xl p-3.5">
+              <div class="text-xs font-bold text-blue-800 uppercase tracking-wider mb-1">Plain-English Staff Note</div>
+              <p id="card-summary" class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                High-confidence match for candidates seeking stable weekday hours on a bus route. Paid training is explicitly included and starting pay exceeds the $20/hr target floor.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+            <span>🔒 Locked Pydantic JSON Schema (Zero Hallucinations)</span>
+            <span id="card-status" class="font-mono font-semibold text-emerald-700">READY_FOR_DIGEST</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE 3 SOFTWARE PROJECTS (EXECUTIVE CASE STUDY CARDS) -->
+  <section id="systems-built" class="py-14 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="mb-8">
+      <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Production Systems &amp; Case Studies</span>
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+        Three Operational Bottlenecks Solved With Software
+      </h3>
+      <p class="text-slate-600 text-sm sm:text-base mt-1">
+        Designed from the ground up for non-technical staff adoption, data accuracy, and measurable time savings.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+
+      <!-- Project Card 1 -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-slate-900 text-white p-5">
+            <div class="flex items-center justify-between text-xs font-mono text-blue-300 mb-2">
+              <span>SYSTEM 01</span>
+              <span>Python • Playwright • Gemini API</span>
+            </div>
+            <h4 class="text-lg font-bold leading-snug">AI Employment Discovery &amp; Matching Engine</h4>
+          </div>
+
+          <div class="p-6 space-y-4 text-sm">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-rose-600">The Problem Solved</div>
+              <p class="text-slate-600 mt-1 leading-relaxed">
+                Job developers spent <strong>8+ hours every week</strong> manually clicking through regional job boards and reading long descriptions to check wages and hidden barriers.
+              </p>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-blue-600">Plain-English How It Works</div>
+              <p class="text-slate-600 mt-1 leading-relaxed">
+                Automatically collects local openings overnight, passes raw descriptions through a strict Gemini AI JSON checklist, and syncs scored matches (0–100) to a staff dashboard and Google Sheets.
+              </p>
+            </div>
+
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5">
+              <div class="text-xs font-bold uppercase tracking-wider text-emerald-800">Measurable Result</div>
+              <p class="text-emerald-950 font-semibold mt-0.5 text-xs sm:text-sm">
+                80%+ reduction in manual search labor; daily automated lead delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between text-xs font-semibold border-t border-slate-100">
+          <a href="../case-studies/01-ai-job-discovery-pipeline.md" class="text-blue-600 hover:underline">Read Case Study 01 →</a>
+          <a href="../sanitized-demos/gemini_job_matcher_demo.py" class="text-slate-500 hover:text-slate-800 font-mono">View Python Demo</a>
+        </div>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-slate-900 text-white p-5">
+            <div class="flex items-center justify-between text-xs font-mono text-emerald-300 mb-2">
+              <span>SYSTEM 02</span>
+              <span>React • TypeScript • Firebase</span>
+            </div>
+            <h4 class="text-lg font-bold leading-snug">HIPAA-Compliant Case Management Portal (WRTP-CMS)</h4>
+          </div>
+
+          <div class="p-6 space-y-4 text-sm">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-rose-600">The Problem Solved</div>
+              <p class="text-slate-600 mt-1 leading-relaxed">
+                Staff tracked client intake across scattered spreadsheets and legacy FileMaker exports, causing 3x manual data entry and audit headaches across 85+ partners.
+              </p>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-blue-600">Plain-English How It Works</div>
+              <p class="text-slate-600 mt-1 leading-relaxed">
+                Role-based web portal that normalizes legacy FileMaker keys, separates private case notes from state grant metrics, and tracks 30-day onboarding milestones in real time.
+              </p>
+            </div>
+
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5">
+              <div class="text-xs font-bold uppercase tracking-wider text-emerald-800">Measurable Result</div>
+              <p class="text-emerald-950 font-semibold mt-0.5 text-xs sm:text-sm">
+                Eliminated double data entry across an 85+ partner network (35+ active partners).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between text-xs font-semibold border-t border-slate-100">
+          <a href="../case-studies/02-hipaa-case-management-system.md" class="text-blue-600 hover:underline">Read Case Study 02 →</a>
+          <a href="../sanitized-demos/hipaa_sync_schema_demo.ts" class="text-slate-500 hover:text-slate-800 font-mono">View TS Schema</a>
+        </div>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-slate-900 text-white p-5">
+            <div class="flex items-center justify-between text-xs font-mono text-amber-300 mb-2">
+              <span>SYSTEM 03</span>
+              <span>Astro • Supabase • Twilio SMS</span>
+            </div>
+            <h4 class="text-lg font-bold leading-snug">Barrier-Filtered Career Hub &amp; Resume Builder</h4>
+          </div>
+
+          <div class="p-6 space-y-4 text-sm">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-rose-600">The Problem Solved</div>
+              <p class="text-slate-600 mt-1 leading-relaxed">
+                Traditional job boards reject candidates with non-linear histories, while blank Word templates stalled adult learners during live career workshops.
+              </p>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-blue-600">Plain-English How It Works</div>
+              <p class="text-slate-600 mt-1 leading-relaxed">
+                Mobile-friendly web app that guides users through plain-English questions to generate honest PDF resumes, filters jobs by practical capabilities, and sends SMS lead alerts.
+              </p>
+            </div>
+
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5">
+              <div class="text-xs font-bold uppercase tracking-wider text-emerald-800">Measurable Result</div>
+              <p class="text-emerald-950 font-semibold mt-0.5 text-xs sm:text-sm">
+                Streamlined job readiness and onboarding across 80+ live workshops.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between text-xs font-semibold border-t border-slate-100">
+          <a href="../case-studies/03-guided-resume-and-career-platform.md" class="text-blue-600 hover:underline">Read Case Study 03 →</a>
+          <a href="../sanitized-demos/synthetic_job_matches.json" class="text-slate-500 hover:text-slate-800 font-mono">View JSON Output</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PLAIN-ENGLISH ARCHITECTURE PIPELINE -->
+  <section id="architecture" class="py-12 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">System Architecture</span>
+        <h3 class="text-2xl font-extrabold text-slate-900 mt-1">How the Operations Pipeline Protects Data Quality</h3>
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Every tool I build follows a four-stage operational pattern so frontline staff get fast answers without risking AI hallucinations or compliance errors:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="text-xs font-mono font-bold text-slate-400">STAGE 01</div>
+          <div class="font-bold text-slate-900 mt-1">Messy Web Data &amp; Intake</div>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Raw regional job boards, legacy FileMaker exports, and mobile workshop intake forms.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="text-xs font-mono font-bold text-blue-600">STAGE 02</div>
+          <div class="font-bold text-slate-900 mt-1">Automated Ingestion</div>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Python/Playwright collectors and TypeScript validators strip duplicates and quarantine malformed dates.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="text-xs font-mono font-bold text-indigo-600">STAGE 03</div>
+          <div class="font-bold text-slate-900 mt-1">AI Structuring &amp; Scoring</div>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Gemini API evaluates text against strict JSON schemas—returning null instead of guessing missing wages.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+          <div class="text-xs font-mono font-bold text-emerald-700">STAGE 04</div>
+          <div class="font-bold text-slate-900 mt-1">Staff Dashboard &amp; Alerts</div>
+          <p class="text-xs text-slate-700 mt-2 leading-relaxed">
+            Human-in-the-loop review in React, Supabase, or Google Sheets, plus direct Twilio SMS client notifications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER & DIRECT CONTACT CALLOUT -->
+  <footer class="bg-slate-950 text-white py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+        Ready to eliminate manual bottlenecks on your Customer Success or Operations team?
+      </h3>
+      <p class="mt-3 text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+        I am available for remote Customer Success, Client Operations, Implementation, and Applied AI Operations roles across B2B SaaS, E-Commerce, EdTech, and HealthTech. Live screen-share walkthroughs of any system above are available on request.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:briancummings111@gmail.com?subject=Portfolio%20Walkthrough%20Request"
+           class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-lg transition-all">
+          ✉️ Email: briancummings111@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/briancummings111" target="_blank" rel="noopener noreferrer"
+           class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-100 font-bold text-sm border border-slate-700 transition-all">
+          🔗 Connect on LinkedIn
+        </a>
+      </div>
+
+      <div class="mt-10 pt-8 border-t border-slate-800/80 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <span>© 2026 Brian Cummings • Redding, CA (Remote Ready)</span>
+        <span>100% Synthetic Demonstration Data • HIPAA &amp; State Grant Compliant Showcase</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE DEMO JAVASCRIPT -->
+  <script>
+    const samples = [
+      {
+        rawText: `POSTED: Yesterday | Redding, CA (Shasta County)
+ URGENTLY HIRING — Warehouse Inventory & Receiving Associate!
+North Valley Supply Co. is looking for a reliable team member to join our daytime receiving crew.
+Pay rate is $21.50 to $24.00 per hour depending on experience. Schedule is Monday through Friday, 7:00 AM to 3:30 PM (no late nights or weekends!).
+Our facility is located 1 block from the RABA Route 4 bus stop.
+Responsibilities: Unload incoming vendor pallets, scan barcodes using our handheld tablet, verify packing slips, and organize stock shelves. Must be able to safely lift up to 40 lbs. High school diploma or equivalent preferred; no college degree required. We provide 2 full weeks of paid hands-on training during onboarding.`,
+        title: "Inventory & Receiving Associate",
+        employer: "North Valley Supply Co. (Synthetic) • Redding, CA",
+        score: "94/100",
+        scoreClass: "bg-emerald-100 text-emerald-800",
+        wage: "$21.50 – $24.00/hr",
+        shift: "Mon–Fri (7:00a–3:30p)",
+        transit: "✅ On Bus Route (RABA #4)",
+        transitClass: "text-emerald-700",
+        flags: [
+          { label: "Paid 2-Week Training", color: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+          { label: "No Degree Required", color: "bg-blue-50 text-blue-800 border-blue-200" },
+          { label: "Lift up to 40 lbs", color: "bg-amber-50 text-amber-800 border-amber-200" }
+        ],
+        summary: "High-confidence match for candidates seeking stable weekday hours on a bus route. Paid training is explicitly included and starting pay exceeds the $20/hr target floor.",
+        status: "APPROVED_FOR_CLIENT_DIGEST"
+      },
+      {
+        rawText: `Patient Scheduling & Front Desk Coordinator — Cascade Rehabilitation Clinic (Redding, CA)
+Full-time position available immediately. Monday - Friday 8:00 AM - 4:30 PM.
+Compensation: $22.00 - $25.50/hr + benefits.
+Located right near the Downtown Transit Center.
+Duties include greeting clinic patients, answering multi-line phones, verifying appointment dates, and entering intake updates into our clinic portal. This is a seated front-office role with minimal physical strain. Looking for someone with at least 1 year of retail, hospitality, or customer service experience. Full HIPAA privacy and software onboarding is provided in your first 30 days.`,
+        title: "Patient Scheduling & Front Desk Coordinator",
+        employer: "Cascade Rehabilitation Clinic (Synthetic) • Redding, CA",
+        score: "88/100",
+        scoreClass: "bg-emerald-100 text-emerald-800",
+        wage: "$22.00 – $25.50/hr",
+        shift: "Mon–Fri (8:00a–4:30p)",
+        transit: "✅ Downtown Transit Hub",
+        transitClass: "text-emerald-700",
+        flags: [
+          { label: "Seated Role (Low Physical Strain)", color: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+          { label: "Retail/Service Exp Accepted", color: "bg-blue-50 text-blue-800 border-blue-200" },
+          { label: "HIPAA Onboarding Provided", color: "bg-indigo-50 text-indigo-800 border-indigo-200" }
+        ],
+        summary: "Strong administrative option for candidates transitioning out of physical labor who have retail or customer service experience. Clinic provides full software and privacy training.",
+        status: "APPROVED_FOR_CLIENT_DIGEST"
+      },
+      {
+        rawText: `Regional Route Delivery Driver — Sierra Commercial Logistics (Anderson, CA)
+Starting pay: $24.00 to $27.00/hr.
+We need an experienced commercial driver for early-morning regional freight routes.
+Shift starts promptly at 4:30 AM at our Anderson industrial park yard (rotating weekend days required).
+Requirements: Must hold an active California Class B Commercial Driver's License (CDL) with clean DMV printout. Must be able to load/unload hand trucks and lift up to 65 lbs repeatedly. Note: Public bus service does not run to the industrial park at 4:30 AM, so reliable personal vehicle is required to reach the yard.`,
+        title: "Regional Route Delivery Driver",
+        employer: "Sierra Commercial Logistics (Synthetic) • Anderson, CA",
+        score: "48/100",
+        scoreClass: "bg-amber-100 text-amber-900",
+        wage: "$24.00 – $27.00/hr",
+        shift: "4:30 AM Start (Rotating)",
+        transit: "⚠️ No Bus at 4:30 AM",
+        transitClass: "text-rose-600",
+        flags: [
+          { label: "Requires Class B CDL", color: "bg-rose-50 text-rose-800 border-rose-200" },
+          { label: "Heavy Lifting (65 lbs)", color: "bg-amber-50 text-amber-800 border-amber-200" },
+          { label: "Outside Transit Hours", color: "bg-rose-50 text-rose-800 border-rose-200" }
+        ],
+        summary: "Good hourly pay, but automatically flagged down to 48/100 for general cohort due to Class B CDL requirement, 65-lb lifting requirement, and 4:30 AM start time before bus service.",
+        status: "HOLD_FOR_CDL_COHORT_ONLY"
+      }
+    ];
+
+    function selectSample(index) {
+      const item = samples[index];
+      document.getElementById('raw-post-box').textContent = item.rawText;
+      document.getElementById('card-title').textContent = item.title;
+      document.getElementById('card-employer').textContent = item.employer;
+      document.getElementById('card-score').textContent = item.score;
+      document.getElementById('card-score-badge').className = `px-3.5 py-2 rounded-xl font-extrabold text-center shrink-0 ${item.scoreClass}`;
+      document.getElementById('card-wage').textContent = item.wage;
+      document.getElementById('card-shift').textContent = item.shift;
+
+      const transitEl = document.getElementById('card-transit');
+      transitEl.textContent = item.transit;
+      transitEl.className = `text-sm font-bold mt-0.5 ${item.transitClass}`;
+
+      const flagsContainer = document.getElementById('card-flags');
+      flagsContainer.innerHTML = item.flags
+        .map(f => `<span class="px-2.5 py-1 rounded-md text-xs font-semibold border ${f.color}">${f.label}</span>`)
+        .join('');
+
+      document.getElementById('card-summary').textContent = item.summary;
+      document.getElementById('card-status').textContent = item.status;
+
+      // Update sample buttons
+      [0, 1, 2].forEach(i => {
+        const btn = document.getElementById(`sample-${i}`);
+        if (i === index) {
+          btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all bg-white text-slate-900 border-white";
+        } else {
+          btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all bg-slate-800 text-slate-300 border-slate-700 hover:border-slate-500";
+        }
+      });
+    }
+
+    function setDemoView(mode) {
+      const grid = document.getElementById('demo-grid');
+      const before = document.getElementById('panel-before');
+      const after = document.getElementById('panel-after');
+      const btnBoth = document.getElementById('btn-side-by-side');
+      const btnBefore = document.getElementById('btn-before');
+      const btnAfter = document.getElementById('btn-after');
+
+      const activeClass = "px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-blue-600 text-white shadow";
+      const inactiveClass = "px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-300 hover:text-white";
+
+      if (mode === 'both') {
+        grid.className = "grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch";
+        before.classList.remove('hidden');
+        after.classList.remove('hidden');
+        btnBoth.className = activeClass;
+        btnBefore.className = inactiveClass;
+        btnAfter.className = inactiveClass;
+      } else if (mode === 'before') {
+        grid.className = "grid grid-cols-1 gap-6 max-w-3xl mx-auto";
+        before.classList.remove('hidden');
+        after.classList.add('hidden');
+        btnBoth.className = inactiveClass;
+        btnBefore.className = activeClass;
+        btnAfter.className = inactiveClass;
+      } else {
+        grid.className = "grid grid-cols-1 gap-6 max-w-3xl mx-auto";
+        before.classList.add('hidden');
+        after.classList.remove('hidden');
+        btnBoth.className = inactiveClass;
+        btnBefore.className = inactiveClass;
+        btnAfter.className = activeClass;
+      }
+    }
+
+    // Initialize default sample
+    selectSample(0);
+  </script>
+</body>
+</html>

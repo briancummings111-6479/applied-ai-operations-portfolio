@@ -1,0 +1,68 @@
+{
+  "pipeline_run_metadata": {
+    "run_id": "SYNTH-2026-10-28-MORNING",
+    "region": "Northern California (Shasta / Tehama Corridor)",
+    "ai_model": "gemini-3.8-flash",
+    "schema_enforced": true,
+    "data_privacy_notice": "100% SYNTHETIC DEMONSTRATION DATA — Zero real employer or candidate PII."
+  },
+  "scored_job_matches": [
+    {
+      "listing_id": "JOB-SYNTH-1042",
+      "job_title": "Inventory & Receiving Associate",
+      "employer_name": "North Valley Supply Co. (Synthetic)",
+      "location": "Redding, CA",
+      "match_score": 94,
+      "hourly_wage_min": 21.5,
+      "hourly_wage_max": 24.0,
+      "schedule_type": "Full-Time | Mon–Fri (7:00 AM – 3:30 PM)",
+      "transit_accessible": true,
+      "transit_notes": "1 block from RABA Route 4 stop; daytime shift aligns with bus schedule.",
+      "barrier_flags": [
+        "Lift up to 40 lbs",
+        "No college degree required",
+        "Paid 2-week on-the-job training"
+      ],
+      "staff_summary": "High-confidence match for candidates seeking stable weekday hours on a bus route. Paid training is explicitly included and starting pay exceeds the $20/hr target floor.",
+      "review_status": "APPROVED_FOR_CLIENT_DIGEST"
+    },
+    {
+      "listing_id": "JOB-SYNTH-1049",
+      "job_title": "Patient Scheduling & Front Desk Coordinator",
+      "employer_name": "Cascade Rehabilitation Clinic (Synthetic)",
+      "location": "Redding, CA",
+      "match_score": 88,
+      "hourly_wage_min": 22.0,
+      "hourly_wage_max": 25.5,
+      "schedule_type": "Full-Time | Mon–Fri (8:00 AM – 4:30 PM)",
+      "transit_accessible": true,
+      "transit_notes": "Direct access via Downtown Transit Center.",
+      "barrier_flags": [
+        "Seated desk role (low physical strain)",
+        "1+ year customer service or phone experience",
+        "HIPAA onboarding provided"
+      ],
+      "staff_summary": "Strong administrative option for candidates transitioning out of physical labor who have retail or customer service experience. Clinic provides full software and privacy training.",
+      "review_status": "APPROVED_FOR_CLIENT_DIGEST"
+    },
+    {
+      "listing_id": "JOB-SYNTH-1055",
+      "job_title": "Regional Route Delivery Driver",
+      "employer_name": "Sierra Commercial Logistics (Synthetic)",
+      "location": "Anderson, CA",
+      "match_score": 48,
+      "hourly_wage_min": 24.0,
+      "hourly_wage_max": 27.0,
+      "schedule_type": "Full-Time | Rotating Shifts (Includes Early Morning)",
+      "transit_accessible": false,
+      "transit_notes": "Industrial park location; 4:30 AM start time is before public bus service begins.",
+      "barrier_flags": [
+        "Requires clean DMV record & Commercial Class B License",
+        "Heavy lifting up to 65 lbs",
+        "No public transit at shift start"
+      ],
+      "staff_summary": "Good hourly pay, but flagged down to 48/100 for general cohort due to Class B license requirement, 65-lb lifting requirement, and 4:30 AM start time outside bus hours.",
+      "review_status": "HOLD_FOR_CDL_COHORT_ONLY"
+    }
+  ]
+}

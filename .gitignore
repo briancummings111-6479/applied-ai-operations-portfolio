@@ -1,0 +1,61 @@
+# ============================================================================
+# STRICT SECURITY & PRIVACY EXCLUSIONS (HIPAA / Grant Compliance Guardrails)
+# ============================================================================
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Cloud, API & Service Account keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*service-account*.json
+*credentials*.json
+*firebase-adminsdk*.json
+secrets/
+.secrets/
+
+# Participant & Partner Data Exports (Never commit raw operational records)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.ods
+*.sqlite
+*.sqlite3
+*.db
+*.fmp12
+data/raw/
+exports/
+backups/
+
+# Python runtime & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Node / Frontend build artifacts
+node_modules/
+dist/
+build/
+.next/
+.astro/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
