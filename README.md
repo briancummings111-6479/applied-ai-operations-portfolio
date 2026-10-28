@@ -2,7 +2,7 @@
 
 **Location:** Redding, CA (Remote Ready) | **Email:** [briancummings111@gmail.com](mailto:briancummings111@gmail.com) | **LinkedIn:** [linkedin.com/in/briancummings111](https://linkedin.com/in/briancummings111)
 
-[**[ 🌐 View Live Visual Portfolio Page ]**](./docs/index.html) &nbsp;&nbsp;&nbsp; [**[ 📺 Watch 90-Second Video Walkthrough (Placeholder) ]**](#90-second-walkthrough--visual-previews)
+[**[ 🌐 View Live Visual Portfolio Page ]**](https://briancummings111-6479.github.io/applied-ai-operations-portfolio/) &nbsp;&nbsp;&nbsp; [**[ 📺 Watch 90-Second Video Walkthrough (Placeholder) ]**](#90-second-walkthrough--visual-previews)
 
 > 🔒 **Portfolio & Confidentiality Notice:** This repository contains plain-English case studies, system architecture diagrams, and sanitized demonstration logic. To maintain strict compliance with California grant reporting standards and HIPAA privacy rules, all production source code, credentials, and participant records are housed in private environments. Live screen-share walkthroughs are available upon request.
 
