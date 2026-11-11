@@ -10,7 +10,7 @@
 
 ## Why I Build
 
-I bridge the gap between physical client operations and software automation. Having spent 15+ years in e-commerce operations (Amazon Seller Central, Teikametrics, and 3PL logistics—cutting client onboarding work by 50% and converting 35%+ of leads), 6 years directing adult education (producing 300+ training videos and lifting course completion by 25%), and 20 years in clinical rehabilitation, I build practical AI and database tools that eliminate repetitive staff busywork and help users succeed in their first 30 days. Every system in this portfolio started on the operations floor to fix a real daily bottleneck.
+When a team is bogged down in repetitive spreadsheet work or confusing setup steps, both staff and clients stall out. I have spent 15+ years running e-commerce and 3PL warehouse operations (cutting client onboarding work by 50% and converting 35%+ of qualified leads), 6 years directing adult training (300+ instructional videos, raising course completion by 25%), and 20 years owning a clinical rehabilitation practice. Because I have worked on the operations floor myself, I build practical AI and database tools that staff actually use. Every system in this portfolio started on the operations floor to fix a real daily bottleneck.
 
 ---
 
@@ -18,8 +18,8 @@ I bridge the gap between physical client operations and software automation. Hav
 
 | System Built | Operational Problem Solved | Plain-English How It Works | Measurable Business Result |
 | :--- | :--- | :--- | :--- |
-| **[AI Employment Discovery & Matching Engine](./case-studies/01-ai-job-discovery-pipeline.md)** | Replaced 8+ hours/week of manual job-board searching across disconnected regional sites. | Scrapes regional listings (Python / Playwright) and uses the Gemini API to score matches against candidate profiles, pay floors, and transit access. | **80%+ reduction in manual search labor; daily automated lead delivery.** |
-| **[HIPAA-Compliant Case Management Portal (WRTP-CMS)](./case-studies/02-hipaa-case-management-system.md)** | Replaced scattered spreadsheets and disconnected legacy FileMaker exports. | Web portal (React / Firebase) with role-based access, HIPAA-aligned file storage, and automated state grant tracking. | **Eliminated double data entry across an 85+ partner network (35+ active partners).** |
+| **[AI Employment Discovery & Matching Engine](./case-studies/01-ai-job-discovery-pipeline.md)** | Replaced 8+ hours/week of manual job-board searching across disconnected regional sites. | Scrapes regional listings (Python / Playwright) and uses the Gemini API to score matches against candidate profiles, pay floors, and transit access. | **80%–90% reduction in manual search labor; daily automated lead delivery.** |
+| **[HIPAA-Compliant Case Management Portal (WRTP-CMS)](./case-studies/02-hipaa-case-management-system.md)** | Staff tracked participant records and placements across 85+ regional partners (35+ active) using scattered spreadsheets and legacy FileMaker exports. | Web portal (React / Firebase) with role-based access, HIPAA-compliant file storage, and automated state grant tracking. | **Eliminated double data entry across internal case notes and state grant reporting.** |
 | **[Barrier-Filtered Career Hub & Resume Builder (GroundWork / SolidStep)](./case-studies/03-guided-resume-and-career-platform.md)** | Traditional job boards filter out non-linear or non-degree candidates and stall early onboarding. | High-speed web app (Astro / Supabase / Twilio SMS) matching candidates by practical capabilities and guiding step-by-step resume creation. | **Streamlined job readiness and participant onboarding across 80+ live workshops.** |
 
 ---
@@ -67,7 +67,7 @@ Below are visual previews from the local environments (displaying 100% synthetic
 Each case study breaks down the operational bottleneck, the plain-English workflow, the safeguards against bad AI data, and the measurable outcome:
 
 1. **[Case Study 01: AI Employment Discovery & Matching Pipeline](./case-studies/01-ai-job-discovery-pipeline.md)**
-   *How automated scraping and structured Gemini AI scoring cut 8+ weekly hours of manual job-board hunting by over 80%.*
+   *How automated scraping and structured Gemini AI scoring cut 8+ weekly hours of manual job-board hunting by 80%–90%.*
 2. **[Case Study 02: HIPAA-Compliant Case Management & Partner Portal](./case-studies/02-hipaa-case-management-system.md)**
    *How a unified React/Firebase portal and deterministic FileMaker schema bridge eliminated double data entry across an 85+ partner network.*
 3. **[Case Study 03: Barrier-Filtered Career Hub & Guided Resume Platform](./case-studies/03-guided-resume-and-career-platform.md)**
@@ -89,9 +89,9 @@ For engineering leads and technical hiring managers who want to inspect how sche
 
 | Domain | Experience | Core Operational Achievement |
 | :--- | :--- | :--- |
-| **E-Commerce & Retail Media** | 15+ Years (Amazon Seller Central, Teikametrics, 3PL Logistics) | Cut client onboarding labor by **50%** via SOP automation; converted **35%+** of qualified prospective accounts. |
-| **Adult Education & Training** | 6 Years (Program Direction & Curriculum Design) | Produced **300+ instructional videos** and led **80+ live workshops**, increasing learner course completion by **25%**. |
-| **Healthcare & Rehabilitation** | 20 Years (Clinical Rehabilitation & Case Coordination) | Built HIPAA-aligned workflows connecting **85+ regional partners** (35+ active) with zero audit compliance failures. |
+| **E-Commerce & 3PL Logistics** | 15+ Years (Amazon Seller Central, Prep It Pack It Ship It) | Cut client onboarding workload by **50%** via SOP automation; converted **35%+** of qualified prospective accounts. |
+| **User Enablement & Adult Training** | 6 Years (E-Commerce Business School, CHYBA) | Built a student milestone system lifting course completion by **25%**, backed by **300+ training videos**, **150+ podcast episodes**, and **80+ live career workshops**. |
+| **Clinical Healthcare & Case Management** | 20 Years (Clinical Practice Owner & Regional Partner Network) | Built HIPAA-aligned workflows connecting **85+ regional partners** (35+ active) with zero audit compliance failures. |
 
 ---
 

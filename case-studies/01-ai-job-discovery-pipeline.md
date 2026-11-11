@@ -51,7 +51,7 @@ To make the AI reliable for daily operations, I built three strict guardrails in
 
 | Operational Metric | Before Automation | After AI Pipeline | Business Impact |
 | :--- | :--- | :--- | :--- |
-| **Weekly Manual Job Search Time** | 8+ hours / week per specialist | < 1.5 hours / week (review only) | **80%+ reduction in manual search labor** |
+| **Weekly Manual Job Search Time** | 8+ hours / week per specialist | < 1.5 hours / week (review only) | **80%–90% reduction in manual search labor** |
 | **Posting Screening Speed** | ~4 minutes per job listing | < 2 seconds per job listing | **120x faster initial screening** |
 | **Data Consistency** | Unstructured notes across tabs | Standardized wage & barrier tags | **Zero duplicate listings in daily feed** |
 | **Frontline Staff Focus** | Browser tab hunting & copy-pasting | Direct employer & client coaching | **6.5+ hours/week returned to client care** |
