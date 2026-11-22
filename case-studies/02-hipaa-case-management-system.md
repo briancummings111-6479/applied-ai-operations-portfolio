@@ -1,63 +1,65 @@
-# Case Study 02: HIPAA-Compliant Case Management & Partner Portal (WRTP-CMS)
+# Case Study 02: WRTP-CMS — HIPAA & HUD-HCD Compliant Case Management Software
 
-> 🔒 **Confidentiality Note:** To comply with HIPAA privacy rules and California state grant regulations, all production database credentials and participant records remain in private environments. The schema mappings shown in this repository use 100% synthetic fields.
+> 🔒 **Confidentiality Note:** To comply with HIPAA privacy rules, PII protection standards, and California HUD-HCD / CDBG-DR grant regulations, all production source code, credentials, and real participant records remain in private environments. All UI previews and schema demos in this repository use 100% synthetic data.
 
 [**← Back to Executive Overview**](../README.md) | [**Inspect Sanitized TypeScript Schema →**](../sanitized-demos/hipaa_sync_schema_demo.ts)
 
 ---
 
-## 1. The Business Problem (The "Before")
+## 1. Origin & The Business Problem (The "Before")
 
-Coordinating participant intake, clinical or vocational milestones, and state grant reporting across a network of **85+ regional partner organizations** (with 35+ active partners submitting weekly updates) created a severe administrative bottleneck.
+**WRTP-CMS** began with a focused compliance need: give our Workforce Recovery Training Program a secure, **HUD-HCD grant-compliant record-keeping and case-noting system** to replace paper folders and manual tracking across Google Drive and Google Docs.
 
-Staff faced three daily friction points:
-- **Legacy Database Silos:** Historical records lived inside an aging FileMaker database with inconsistent field names, while frontline staff tracked daily progress in separate spreadsheets and email threads.
-- **Double and Triple Data Entry:** Whenever a participant completed a training milestone or updated an intake form, staff had to type the same notes into the local spreadsheet, the legacy database, and the quarterly state grant report.
-- **Privacy & Audit Exposure:** Passing spreadsheets back and forth over email made version control nearly impossible and introduced unnecessary privacy risk when handling sensitive participant documents.
+Before the platform existed, frontline staff were fighting their own filing system every day:
+- **Paper Folders & Scattered Google Drive Docs:** Participant intake packets, eligibility proofs, case notes, and service plans lived across physical binders, shared Drive folders, and disconnected spreadsheets. Finding a single missing signature before a grant audit took hours.
+- **Disconnected Outreach Channels:** Staff made calls from desk phones, sent texts from separate tools, and emailed reminders from personal inboxes—then had to manually re-type every interaction as a compliance case note later.
+- **Double Data Entry Across Grant Reports:** Tracking supportive service spending, workforce readiness milestones, and referrals across **85+ regional partner organizations (35+ active)** required re-entering the same data multiple times for internal tracking and CDBG-DR state grant reports.
 
 ---
 
-## 2. The Solution (In Plain English)
+## 2. How Initial Success Expanded Into a Full-Scale Platform
 
-I designed and built **WRTP-CMS**, a centralized web portal (React and Firebase) that gives case managers and partner organizations a single, secure place to manage participant progress from day one.
+Once staff saw how quickly secure digital case noting eliminated paper chaos, WRTP-CMS expanded module by module into a comprehensive, all-in-one **HIPAA-compliant and PII-secure Firebase Case Management Software** platform (React, TypeScript, Firebase US multi-region `nam5`, FIPS 140-2 encryption, Twilio Voice & SMS, and Gemini AI):
 
-Here is how the portal works for non-technical users:
-1. **Role-Based Workspaces:** When a partner or case manager logs in, they only see the specific participants and forms assigned to their role. No clutter, and no accidental exposure of unauthorized records.
-2. **Guided Milestone Checklists:** Instead of guessing which documents are missing for state grant compliance, staff see a visual progress bar for every participant—covering intake verification, barrier assessments, training hours, and placement outcomes.
-3. **Legacy FileMaker Bridge:** Behind the scenes, an automated schema mapper translates messy legacy FileMaker export keys into clean, standardized web records so historical data isn't lost during transition.
+- **End-to-End Participant Record Management:** Kiosk & Enrollment Intake forms, Document OCR extraction, Updatable Individual Service Plans (ISP), Participant Files & Attachments, Case Notes, Contact Notes, Workforce Readiness tracking, WorkDocs Checklists, and Duplicate Resolution.
+- **Built-In Multi-Channel Communications Hub:** Live in-browser **Twilio VoIP Phone & Dialer**, **2-Way SMS** inbox, integrated **Email**, Group Broadcasts, and automated **Email & SMS Engagement and Re-Engagement Campaigns**—automatically logging outreach touchpoints directly to participant records.
+- **Integrated Job Search & Matching:** Pulls transit-checked, AI-enriched openings directly from **Career Miner** into each participant's dashboard so case managers can match and text vetted job leads with one click.
+- **Financial Controls & Grant Compliance:** Digital **Funds Approvals & Supportive Services spending** tracking (Form 3.1/3.2 workflows), **Audit Logs & per-client Audit Checklists**, **CDBG-DR Grant Reporting**, User Role Management, Task Management, and a full **85+ Partner Directory & Referral Logging** system.
+- **Cross-System Education Sync:** Links participant ISPs directly with our Student Information System's Personalized Learning Plans so dual-enrolled youth never fall through the cracks.
 
 ```mermaid
 flowchart LR
-    A["Legacy FileMaker Exports<br/>& Partner Intake Forms"] --> B["Deterministic Schema Mapper<br/>(Type Validation & PII Redaction)"]
-    B --> C["HIPAA-Aligned Cloud Portal<br/>(Role-Based Access Control)"]
-    C --> D["Automated Grant Reports<br/>& Real-Time Case Dashboards"]
+    A["Paper Folders, Google Drive<br/>& Legacy Exports (Before)"] --> B["WRTP-CMS Secure Intake<br/>(Kiosk Forms, OCR, Validation)"]
+    B --> C["All-in-One Firebase Workspace<br/>(Case Notes, Twilio VoIP/SMS, ISP,<br/>Funds Approvals, Job Matching, 85+ Partners)"]
+    C --> D["Audit-Ready Outputs<br/>(CDBG-DR Grant Reports,<br/>Audit Checklists & Immutable Logs)"]
 ```
 
 ---
 
-## 3. The AI & Automation Workflow (Data Integrity & Privacy Safeguards)
+## 3. Security, Privacy & Data Integrity Architecture
 
-When handling health-adjacent case files and state-funded grant metrics, accuracy and privacy come first. You cannot let an unverified script or an AI prompt alter a participant's compliance status.
+Handling health-adjacent recovery files and federal/state HUD-HCD grant funding leaves zero margin for sloppy data handling:
 
-I implemented strict deterministic and human-verified rules across the system:
-- **Deterministic Key Mapping:** Legacy FileMaker fields (such as `Pt_Intake_Dt_v2` or `Bar_Code_04`) pass through a strict TypeScript validation layer before touching the cloud database. Invalid dates or malformed IDs are quarantined for human review rather than silently corrupting the record.
-- **Automated PII Separation:** Identifiable client contact details are separated from aggregate grant-reporting metrics. Administrators can generate state compliance summaries in seconds without exposing private case notes.
-- **Audit Trails on Every Edit:** Every status change records a timestamp and staff user ID, turning end-of-quarter grant audits from a two-week fire drill into a routine export.
+- **US Data Sovereignty & Encryption:** Hosted on Google Cloud / Firebase North America multi-region (`nam5`) with FIPS 140-2 validated encryption at rest and in transit.
+- **Deterministic Schema Validation & PII Separation:** Legacy imports pass through strict TypeScript validators that quarantine malformed records and keep private case notes cleanly separated from aggregate grant-reporting exports.
+- **Immutable Audit Trails & Per-Client Checklists:** Every critical record change captures timestamps and user IDs, while built-in 24-point HUD-HCD audit checklists flag missing documents before monitors arrive.
 
 ---
 
 ## 4. The Measurable Result (The "After")
 
-| Operational Metric | Before Portal (Spreadsheets + FileMaker) | After WRTP-CMS Portal | Business Impact |
+The massive increase in team capacity and reduction in weekly staff hours across case noting, outreach campaigns, funds approvals, job matching, and audit prep is difficult to capture in a single percentage—it transformed how the entire agency operates:
+
+| Operational Area | Before WRTP-CMS | After WRTP-CMS | Operational Impact |
 | :--- | :--- | :--- | :--- |
-| **Partner Network Coordination** | Manual email chains across 85+ partners | Unified portal for 85+ partners (35+ active) | **Single source of truth across region** |
-| **Data Entry Workflow** | 3x manual entry per milestone | Enter once; auto-syncs to grant reports | **Eliminated double data entry** |
-| **Grant Audit Preparation** | Days of manual spreadsheet reconciliation | Instant filtered compliance views | **Zero missed reporting deadlines** |
-| **New Staff Onboarding** | Weeks learning quirky spreadsheet tabs | Guided visual forms with built-in checks | **Faster staff ramp-up & fewer typos** |
+| **Participant Files & Notes** | Paper folders, Google Drive & Docs | HIPAA & PII-secure Firebase workspace | **Single source of truth for every client** |
+| **Client Outreach & Follow-Up** | Separate phone, SMS & email silos | Built-in Twilio VoIP, 2-Way SMS & Campaigns | **Automated re-engagement & touchpoint logs** |
+| **Grant & Audit Readiness** | Days of manual folder & sheet checks | Live Audit Checklists & CDBG-DR exports | **Eliminated double data entry across reports** |
+| **Regional Partner Network** | Unlogged emails across partners | Central 85+ Partner Directory (35+ active) | **Trackable referrals & supportive spending** |
 
 ---
 
-## 5. Link to Sanitized Demo Code
+## 5. Sanitized Demonstration Logic
 
-Technical reviewers can inspect how legacy FileMaker exports are validated and sanitized in TypeScript:
-- **[`sanitized-demos/hipaa_sync_schema_demo.ts`](../sanitized-demos/hipaa_sync_schema_demo.ts)** — Sanitized TypeScript schema, legacy key-mapping dictionary, and HIPAA audit-log transformation demo.
+Technical reviewers can inspect how legacy records are normalized, validated, and stripped of unencrypted PII for state compliance reporting:
+- **[`sanitized-demos/hipaa_sync_schema_demo.ts`](../sanitized-demos/hipaa_sync_schema_demo.ts)** — Sanitized TypeScript schema, legacy key-mapping logic, and privacy-redacted compliance output demo.
